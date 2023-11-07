@@ -12,7 +12,7 @@ class OptionsWindow(QDialog):
         self.setWindowTitle("Options")
         self.setGeometry(200, 200, 700, 400)
         self.project_directory = project_directory
-
+    
         self.layout = QVBoxLayout()
 
         self.label = QLabel("Select an option:")
@@ -67,28 +67,20 @@ class OptionsWindow(QDialog):
         subdirectories = []
 
         if selected_option == "laplacianFoam":
-            self.options_combo.setToolTip("LaplacianFoam is a solver in OpenFOAM for solving Laplace's equation and similar problems in fluid dynamics and heat transfer.")
             subdirectories = ["flange", "implicitAMI"]
         elif selected_option == "potentialFoam":
             subdirectories = ["cylinder", "pitzDaily"]
-            self.options_combo.setToolTip("potentialFoam is a solver in OpenFOAM for simulating electric potential and electrostatic fields in electrostatic problems.")
         elif selected_option == "scalarTransportFoam":
-            self.options_combo.setToolTip("scalarTransportFoam is an OpenFOAM solver for modeling the transport of scalar quantities (e.g., temperature, concentration) in fluid flows, used in various applications from heat transfer to chemical reactions.")
             subdirectories = [""]
         elif selected_option == "rhoCentralFoam":
-            self.options_combo.setToolTip("rhoCentralFoam is an OpenFOAM solver for simulating compressible, transient, and turbulent flows using a central-upwind scheme for density-based solvers.")
             subdirectories = [""]
         elif selected_option == "rhoPimpleFoam":
-            self.options_combo.setToolTip("rhoPimpleFoam is an OpenFOAM solver that's suitable for transient, incompressible flows with turbulence modeling, using the PIMPLE (PISO-SIMPLE) algorithm to solve the Navier-Stokes equations.")
             subdirectories = [""]
         elif selected_option == "rhoPorousSimpleFoam":
-            self.options_combo.setToolTip("rhoPorousSimpleFoam is an OpenFOAM solver designed for modeling flows through porous media with incompressible, turbulent fluid flow, suitable for various applications involving porous materials like filters or packed beds.")        
             subdirectories = [""]
         elif selected_option == "rhoSimpleFoam":
-            self.options_combo.setToolTip("rhoSimpleFoam is an OpenFOAM solver for steady-state, incompressible flows, using the SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm to solve the Navier-Stokes equations.")
             subdirectories = [""]
         elif selected_option == "icoFoam":
-            self.options_combo.setToolTip("icoFoam is an OpenFOAM solver designed for simulating incompressible, steady-state flows using a PISO (Pressure-Implicit with Splitting of Operators) algorithm, making it suitable for a wide range of fluid flow applications.")
             subdirectories = ["cavity"]
 
         self.subdirectory_combo.clear()

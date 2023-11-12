@@ -1,12 +1,17 @@
 import sys
 import os
-
-
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel, \
+from PyQt6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QWidget,
+    QVBoxLayout,
+    QPushButton,
+    QFileDialog,
+    QLabel,
     QLineEdit
-
+)
 from optionfunctions import OptionsWindow
 
 

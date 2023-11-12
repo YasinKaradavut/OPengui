@@ -1,14 +1,28 @@
 import os
 import shutil
 import subprocess
-from PyQt6 import QtCore
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMenu
-import gui
 import sys
+
+from PyQt6 import QtCore, QtWidgets
+from PyQt6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QMenu,
+    QDialog,
+    QVBoxLayout,
+    QPushButton,
+    QLabel,
+    QComboBox,
+    QRadioButton,
+    QButtonGroup,
+    QMessageBox,
+    QTextEdit
+)
+
 from PyQt6.QtGui import QDesktopServices
 from PyQt6.QtCore import QUrl
-from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QLabel, QComboBox, QRadioButton, QButtonGroup, \
-    QMessageBox, QApplication, QTextEdit
+import gui
+
 class OptionsWindow(QDialog, gui.Ui_Dialog):
     def __init__(self, project_directory):
         super().__init__()

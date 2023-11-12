@@ -3,7 +3,7 @@ import shutil
 import subprocess
 
 from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QLabel, QComboBox, QRadioButton, QButtonGroup, \
-    QMessageBox, QApplication, QTextEdit
+    QMessageBox, QApplication, QTextEdit, QHBoxLayout
 
 
 class OptionsWindow(QDialog):
@@ -19,11 +19,16 @@ class OptionsWindow(QDialog):
         self.layout.addWidget(self.label)
 
         self.button_group = QButtonGroup(self)
-        self.basic_radio = QRadioButton("Basic CFD codes:")
+        self.layout1 = QHBoxLayout(self)
+        self.basic_radio = QRadioButton("Basic CFD codes:",parent=self.layout1)
+        self.basic_help = QPushButton("Help")
         self.compressible_radio = QRadioButton("Compressible flow:")
         self.incompressible_radio = QRadioButton("Incompressible:")
 
-        self.layout.addWidget(self.basic_radio)
+        self.layout.addLayout(self.layout1)
+
+        self.layout1.addWidget(self.basic_radio)
+        self.layout1.addWidget(self.basic_help)
         self.layout.addWidget(self.compressible_radio)
         self.layout.addWidget(self.incompressible_radio)
 

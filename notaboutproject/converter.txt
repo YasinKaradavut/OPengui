@@ -1,0 +1,1 @@
+pyuic6 untitled.ui -o cikti.py

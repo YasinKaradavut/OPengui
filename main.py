@@ -7,7 +7,7 @@ from PyQt6.QtGui import QPixmap
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel, \
     QLineEdit
 
-from OptionsWindow import OptionsWindow
+from optionfunctions import OptionsWindow
 
 
 class ProjectManager(QMainWindow):
@@ -24,7 +24,7 @@ class ProjectManager(QMainWindow):
 
         self.layout = QVBoxLayout()
 
-        original_pixmap = QPixmap("OpenFOAM.png")
+        original_pixmap = QPixmap("images/OpenFOAM.png")
         
         # Resize the image to the desired size
         width = 256*2  # Replace with your desired width

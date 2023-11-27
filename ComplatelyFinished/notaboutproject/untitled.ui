@@ -149,33 +149,6 @@ padding: 7px 7px;</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="basic_help">
-        <property name="font">
-         <font>
-          <pointsize>8</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <stylestrategy>PreferDefault</stylestrategy>
-          <kerning>true</kerning>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #fff;
-background-color:#692743;
-border-radius: 10px;
-padding: 7px 7px;</string>
-        </property>
-        <property name="text">
-         <string>Help</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -210,28 +183,6 @@ padding: 7px 7px;</string>
         </property>
         <property name="text">
          <string>Compressible flow:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="compressible_help">
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #fff;
-background-color:#692743;
-border-radius: 10px;
-padding: 7px 7px;</string>
-        </property>
-        <property name="text">
-         <string>Help</string>
         </property>
        </widget>
       </item>
@@ -272,28 +223,6 @@ padding: 7px 7px;</string>
         </property>
         <property name="text">
          <string>Incompressible:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="incompressible_help">
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #fff;
-background-color:#692743;
-border-radius: 10px;
-padding: 7px 7px;</string>
-        </property>
-        <property name="text">
-         <string>Help</string>
         </property>
        </widget>
       </item>
@@ -372,7 +301,7 @@ padding: 7px 7px;</string>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="6,1,7">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="6,7">
       <item>
        <widget class="QComboBox" name="subdirectory_combo">
         <property name="cursor">
@@ -381,28 +310,6 @@ padding: 7px 7px;</string>
         <property name="styleSheet">
          <string notr="true">border-radius: 10px;
 padding: 7px 7px;</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="combo2_help">
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #fff;
-background-color:#692743;
-border-radius: 10px;
-padding: 7px 7px;</string>
-        </property>
-        <property name="text">
-         <string>Help</string>
         </property>
        </widget>
       </item>

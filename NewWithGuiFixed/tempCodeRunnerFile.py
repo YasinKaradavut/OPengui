@@ -1,0 +1,1 @@
+ central_layout.addWidget(self.open_foam_logo)
